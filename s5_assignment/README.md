@@ -11,9 +11,9 @@ The test set has 10,000 images, whereas the training set has 60,000 images. The 
 
 The MNIST Torch Model conatins 3 main files.
 
-1. utils.py
-2. model.py 
-3. S5.ipynb 
+1. [utils.py] (https://github.com/adil22jaleel/era-v1-assignments/blob/main/s5_assignment/utils.py)
+2. [model.py] (https://github.com/adil22jaleel/era-v1-assignments/blob/main/s5_assignment/model.py)
+3. [S5.ipynb] (https://github.com/adil22jaleel/era-v1-assignments/blob/main/s5_assignment/S5.ipynb)
 
 ### utils.py
 
@@ -36,7 +36,7 @@ Importing necessary modules and defining hyperparameters: The notebook starts wi
 
 Loading the data: The notebook uses the get_data_loaders function from utils.py to load the MNIST dataset and create data loaders for training and testing.
 
-Defining the model, loss function, and optimizer: The notebook defines the MNISTNet model using the MNISTNet class from model.py. It also specifies the loss function Negative Loss Likelihood(nn.nll) and the optimizer (optim.SGD).
+Defining the model, loss function, and optimizer: The notebook defines the MNISTNet model using the MNISTNet class from model.py. It also specifies the loss function Negative Loss Likelihood and the optimizer (optim.SGD).
 
 Training loop: The notebook contains a training loop that iterates over the data batches and performs forward and backward passes to train the model. It uses the train function defined in the notebook to handle the training process.
 
@@ -49,13 +49,15 @@ Printing and analyzing results: Finally, the notebook prints the training and te
 To use this project, follow these steps:
 
 1. Make sure you have PyTorch and torchvision installed in your Python environment.
-
 2. Place the utils.py, model.py, and S5.ipynb files in the same directory.
-
 3. Open the S5.ipynb file in Jupyter Notebook or a compatible environment.
-
 4. Run each cell in the notebook sequentially, following the instructions and comments provided.
-
 5. Observe the training and testing progress, as well as the final metrics.
-
 6. You can modify the hyperparameters, model architecture, or any other aspects of the code to suit your specific needs.
+
+
+## Python Dependencies
+
+* torch
+* torchvision
+* torchsummary (For model summary)
