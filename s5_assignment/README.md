@@ -19,14 +19,14 @@ The MNIST Torch Model conatins 3 main files.
 
 The utils.py file contains utility functions that are used in the project for common tasks such as data preprocessing and loading. Here's a brief description of the functions in utils.py:
 
-⋅⋅* transforms_data(): This function loads and prepares the MNIST dataset for training and testing. It uses the torchvision library to download and preprocess the data, and returns data loaders that can be used to iterate over the data in batches during training and testing.
+* transforms_data(): This function loads and prepares the MNIST dataset for training and testing. It uses the torchvision library to download and preprocess the data, and returns data loaders that can be used to iterate over the data in batches during training and testing.
 
 
 ### model.py
 
 The MNIST Net model, a convolutional neural network (CNN) architecture for categorising the MNIST handwritten digits dataset, is defined in the model.py file. Here is a quick summary of what model.py contains:
 
-..*MNISTNet class: This class outlines the MNISTNet model's architecture. Convolutional layers (nn.Conv2d), pooling layers (F.max_pool2d), and fully linked layers (nn.Linear) are among the layers that make up this system. The model's forward pass is defined by the forward method.
+* MNISTNet class: This class outlines the MNISTNet model's architecture. Convolutional layers (nn.Conv2d), pooling layers (F.max_pool2d), and fully linked layers (nn.Linear) are among the layers that make up this system. The model's forward pass is defined by the forward method.
 
 ### S5.ipynb
 
