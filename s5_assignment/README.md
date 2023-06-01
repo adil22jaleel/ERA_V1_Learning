@@ -11,9 +11,9 @@ The test set has 10,000 images, whereas the training set has 60,000 images. The 
 
 The MNIST Torch Model conatins 3 main files.
 
-1. [utils.py] (https://github.com/adil22jaleel/era-v1-assignments/blob/main/s5_assignment/utils.py)
-2. [model.py] (https://github.com/adil22jaleel/era-v1-assignments/blob/main/s5_assignment/model.py)
-3. [S5.ipynb] (https://github.com/adil22jaleel/era-v1-assignments/blob/main/s5_assignment/S5.ipynb)
+1. [utils.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s5_assignment/utils.py)
+2. [model.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s5_assignment/model.py)
+3. [S5.ipynb](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s5_assignment/S5.ipynb)
 
 ### utils.py
 
