@@ -101,14 +101,14 @@ To calculate the total error, we need to calculate the error that is obtained fr
 
 **Error calculation formula**
 $$E1=½ * (t1 - a\\_o1)²$$
-$$E2=½ * (t2- a\\_o2)² $$
+$$E2=½ * (t2- a\\_o2)²$$
 where t1 and t2 are the target variable names. We have assumed the target here as t1=t2=0.5
 
 The total error is the sum of all the errors from the output layer. Total Error is
-$$ E= E1 + E2$$
+$$E= E1 + E2$$
 and is calculated as 
-$$ E= E1 +E2=0.005668754 + 0.008512624$$
-$$ Total Error E = 0.014181378 $$
+$$E= E1 +E2=0.005668754 + 0.008512624$$
+$$Total Error E = 0.014181378$$
 
 ### 4. Calculating the Gradients for Hidden Layer Weights
 
@@ -122,9 +122,9 @@ For gradient calculation for the weights w5-w8, we are dividing the code into 3 
 #### 4.1 Gradient calculation Block 1 (w5-w8) 
 
 Gradient for w5 is expressed as
-$$∂E\_total/∂w5 = ∂(E1 + E2)/∂w5$$
-$$∂E\_total/∂w5 = ∂E1/∂w5$$
-$$∂E\_total/∂w5 = ∂E1/∂a_o1 * ∂a_o1/∂o1 * ∂o1/∂w5$$
+$$∂E\\_total/∂w5 = ∂(E1 + E2)/∂w5$$
+$$∂E\\_total/∂w5 = ∂E1/∂w5$$
+$$∂E\\_total/∂w5 = ∂E1/∂a\\_o1 * ∂a\\_o1/∂o1 * ∂o1/∂w5$$
 
 In the above second equation, the E2 component becomes zero because there weights w5 does not have derivaties or dependencies on the second error output provided
 
