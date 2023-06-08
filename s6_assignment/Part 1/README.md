@@ -108,7 +108,7 @@ The total error is the sum of all the errors from the output layer. Total Error 
 $$E= E1 + E2$$
 and is calculated as 
 $$E= E1 +E2=0.005668754 + 0.008512624$$
-$$Total Error E = 0.014181378$$
+$$Total Error, E = 0.014181378$$
 
 ### 4. Calculating the Gradients for Hidden Layer Weights
 
@@ -134,7 +134,7 @@ The third line explains the chain rule. We are expressing the partial derivative
 
 From the above block, we have to find respective values for each of the value that is multipled in the chain product
 
-$$∂E1/∂a\\_o1 =  ∂(½ * (t1 - a\\_o1)²)/∂a_o1 = (a\\_o1 - t1)$$
+$$∂E1/∂a\\_o1 =  ∂(½ * (t1 - a\\_o1)²)/∂a\\_o1 = (a\\_o1 - t1)$$
 *Partial derivative of activation function of o1 to the first error loss*
 $$∂a\\_o1/∂o1 =  ∂(σ(o1))/∂o1 = a\\_o1*(1-a\\_o1)$$
 *Partial derivative of o1 to the activation function of o1*
