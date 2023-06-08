@@ -90,7 +90,8 @@ $$o1=w5 * a\\_h1 + w6 * a\\_h2$$
 $$o2=w7 * a\\_h1 + w8 * a\\_h2$$
 
 After applying the sigmoid activation function
-$$a\\_o1 =0.606477732$$
+
+$$a\\o1 =0.606477732$$
 $$a\\_o2=0.630480835$$
 
 ### 3. Calculating the Error
@@ -107,7 +108,9 @@ where t1 and t2 are the target variable names. We have assumed the target here a
 The total error is the sum of all the errors from the output layer. Total Error is
 $$E= E1 + E2$$
 and is calculated as 
+
 $$E= E1 +E2=0.005668754 + 0.008512624$$
+
 $$Total Error, E = 0.014181378$$
 
 ### 4. Calculating the Gradients for Hidden Layer Weights
