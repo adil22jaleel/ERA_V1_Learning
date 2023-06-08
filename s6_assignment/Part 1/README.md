@@ -63,8 +63,8 @@ $$w5= 0.4, w6=0.45 , w7=0.50 , w8=0.55$$
 The hidden layer is calculated based on the input layer and the initialised weights. 
 
 **Hidden Layer formula**
-$$h1=w1*i1 + w2*i2$$
-$$h2=w3*i1 + w4*i2$$
+$$h1=w1 * i1 + w2 * i2$$
+$$h2=w3 * i1 + w4 * i2$$
 $$h1=0.0275, h2=0.0425$$
 
 Now we know the values for h1 and h2, we can calculate the activation function over it. In this example we are using the sigmoid function.
@@ -86,8 +86,8 @@ If the hidden layer is calculated between inputs layer and input weights, the ou
 From step 1, we know the values for h1 ,h2 ,a_h1 and a_h2. We can use the similar for calculation.
 
 **Output Layer formula**
-$$o1=w5 * a_h1 + w6 * a\\_h2$$
-$$o2=w7 * a_h1 + w8 * a\\_h2$$
+$$o1=w5 * a\\_h1 + w6 * a\\_h2$$
+$$o2=w7 * a\\_h1 + w8 * a\\_h2$$
 
 After applying the sigmoid activation function
 $$a\\_o1=0.606477732$$
@@ -100,8 +100,8 @@ $$a\\_o2=0.630480835$$
 To calculate the total error, we need to calculate the error that is obtained from all the output nodes in the output layer.
 
 **Error calculation formula**
-$$E1=½ * (t1 - a\_o1)²$$
-$$E2=½ * (t2- a\_o2)² $$
+$$E1=½ * (t1 - a\\_o1)²$$
+$$E2=½ * (t2- a\\_o2)² $$
 where t1 and t2 are the target variable names. We have assumed the target here as t1=t2=0.5
 
 The total error is the sum of all the errors from the output layer. Total Error is
@@ -124,7 +124,7 @@ For gradient calculation for the weights w5-w8, we are dividing the code into 3 
 Gradient for w5 is expressed as
 $$∂E\_total/∂w5 = ∂(E1 + E2)/∂w5$$
 $$∂E\_total/∂w5 = ∂E1/∂w5$$
-$$∂E\_total/∂w5 = `∂E1/∂a_o1*∂a_o1/∂o1*∂o1/∂w5`$$
+$$∂E\_total/∂w5 = ∂E1/∂a_o1 * ∂a_o1/∂o1 * ∂o1/∂w5$$
 
 In the above second equation, the E2 component becomes zero because there weights w5 does not have derivaties or dependencies on the second error output provided
 
@@ -134,31 +134,31 @@ The third line explains the chain rule. We are expressing the partial derivative
 
 From the above block, we have to find respective values for each of the value that is multipled in the chain product
 
-$$∂E1/∂a_o1 =  ∂(½ * (t1 - a\_o1)²)/∂a_o1 = (a\_o1 - t1)$$
+$$∂E1/∂a\\_o1 =  ∂(½ * (t1 - a\\_o1)²)/∂a_o1 = (a\\_o1 - t1)$$
 *Partial derivative of activation function of o1 to the first error loss*
-$$∂a\_o1/∂o1 =  ∂(σ(o1))/∂o1 = a\_o1*(1-a\_o1)$$
+$$∂a\\_o1/∂o1 =  ∂(σ(o1))/∂o1 = a\\_o1*(1-a\\_o1)$$
 *Partial derivative of o1 to the activation function of o1*
-$$∂o1/∂w5 = a\_h1$$
+$$∂o1/∂w5 = a\\_h1$$
 *Partial derivative of weight5 on top of the output neuron 1*
 
 Multiplying all together, we get 
-$$∂E\_total/∂w5 = (a\_o1 - t1) * a\_o1 * (1 - a\_o1) *  a\_h1$$
+$$∂E\\_total/∂w5 = (a\\_o1 - t1) * a\\_o1 * (1 - a\\_o1) *  a\\_h1$$
 
 Similarily, we can calculate for the gradient for w6,w7,w8
-$$∂E\_total/∂w6 = (a\_o1 - t1) * a_o1 * (1 - a\_o1) *  a_h2$$
-$$∂E\_total/∂w7 = (a\_o2 - t2) * a_o2 * (1 - a\_o2) *  a_h1$$
-$$∂E\_total/∂w8 = (a\_o2 - t2) * a_o2 * (1 - a\_o2) *  a_h2$$
+$$∂E\\_total/∂w6 = (a\\_o1 - t1) * a\\_o1 * (1 - a\\_o1) *  a\\_h2$$
+$$∂E\\_total/∂w7 = (a\\_o2 - t2) * a\\_o2 * (1 - a\\_o2) *  a\\_h1$$
+$$∂E\\_total/∂w8 = (a\\_o2 - t2) * a\\_o2 * (1 - a\\_o2) *  a\\_h2$$
 
 
 By the calculations from above, we know
-$$ a\_o1=0.606477732 , a\_o2=0.630480835 $$ 
+$$ a\\_o1=0.606477732 , a\\_o2=0.630480835 $$ 
 $$ t1=0.5 , t2=0.5 $$
-$$a\_h1=0.506874567 , a\_h2=0.510623401$$
+$$a\\_h1=0.506874567 , a\\_h2=0.510623401$$
 
 *hence*
 
-$$ ∂E/∂w5=0.012880819 ,∂E/∂w6=0.012976085 $$
-$$ ∂E/∂w7=0.015408348, ∂E/∂8=0.015522308 $$
+$$∂E/∂w5=0.012880819 ,∂E/∂w6=0.012976085$$
+$$∂E/∂w7=0.015408348, ∂E/∂8=0.015522308$$
 
 This is the gradient of the weight calculated for weights w5,w6,w7,w8
 		
@@ -169,44 +169,44 @@ Next up we need to find the gradients for the weights of the input layers.
 Let us consider the case of weight w1. For the gradients of we need to first find the gradients of a_h1 with respect to the error.
 
 The gradient of the total error with respect to a_h1 can be denoted as 
-$∂E_total/∂a\_h1 = ∂E_1/∂a\_h1 + ∂E_1/∂a\_h2$ 
+$∂E_total/∂a\\_h1 = ∂E1/∂a\\_h1 + ∂E1/∂a\\_h2$ 
 
-$$∂E1/∂a\_h1 = (a_01 - t1) * a_o1 * (1 - a_o1) * w5$$
-$$∂E2/∂a\_h1 = (a_02 - t2) * a_o2 * (1 - a_o2) * w7$$
+$$∂E1/∂a\\_h1 = (a\\_01 - t1) * a\\_o1 * (1 - a\\_o1) * w5$$
+$$∂E2/∂a\\_h1 = (a\\_02 - t2) * a\\_o2 * (1 - a\\_o2) * w7$$
 Similar to the gradient descent of the hidden layer, we can derive $∂E_total/∂a\_h1 = ∂E_1/∂a\_h1 = ∂E_1/∂a\_o1 * ∂a\_o1/∂o1 * ∂o1/∂a\_h1$				
 
 The equations can be written as 
-$$∂E_1/∂a\_o1 =  ∂(½  *  (t1 - a\_o1)²)/∂a\_o1 = (a\_o1 - t1)$$
-$$∂a\_o1/∂o1 =  ∂(σ(o1))/∂o1 = a\_o1  *  (1 - a\_o1)$$
-$$∂o1/∂a\_h1 = w_5$$
+$$∂E1/∂a\\_o1 =  ∂(½  *  (t1 - a\\_o1)²)/∂a\\_o1 = (a\\_o1 - t1)$$
+$$∂a\\_o1/∂o1 =  ∂(σ(o1))/∂o1 = a\\_o1  *  (1 - a\\_o1)$$
+$$∂o1/∂a\\_h1 = w5$$
 
 By bring all the equations together, we can rewrite 
-$$∂E_1/∂a\_h1 = (a\_o1 - t1)  *  a\_o1  *  (1 - a\_o1)  *  w_5$$
+$$∂E1/∂a\\_h1 = (a\\_o1 - t1)  *  a\\_o1  *  (1 - a\\_o1)  *  w5$$
 
 Similary the gradients for the error with respect to a_h2 becomes 
 
-$∂E_total/∂a\_h2 = (a\_o1 - t1)  *  a\_o1  *  (1 - a\_o1)  *  w_6 +  (a\_o2 - t2)  *  a\_o2  *  (1 - a\_o2)  *  w_8$
+$∂E\\_total/∂a\\_h2 = (a\\_o1 - t1)  *  a\\_o1  *  (1 - a\\_o1)  *  w6 +  (a\\_o2 - t2)  *  a\\_o2  *  (1 - a\\_o2)  *  w8$
 
 To find the gradients for the weight w1, we can apply the chain rule again
 
-$∂E_total/∂w_1 = ∂E_total/∂a\_h1  *  ∂a\_h1/∂h1  *  ∂h1/∂w_1$
+$∂E\\_total/∂w1 = ∂E\\_total/∂a\\_h1  *  ∂a\\_h1/∂h1  *  ∂h1/∂w\\_1$
 
 This results in combining all the above into one single equations as 
 
-- $∂E_total/∂w_1 = ((a\_o1 - t1)  *  a\_o1  *  (1 - a\_o1)  *  w_5 +  (a\_o2 - t2)  *  a\_o2  *  (1 - a\_o2)  *  w_7)  *  a\_h1  *  (1 - a\_h1)  *  i_1$
+- $∂E\\_total/∂w1 = ((a\\_o1 - t1)  *  a\\_o1  *  (1 - a\\_o1)  *  w5 +  (a\\_o2 - t2)  *  a\\_o2  *  (1 - a\\_o2)  *  w7)  *  a\\_h1  *  (1 - a\\_h1)  *  i1$
 
-- $∂E_total/∂w_2 = ((a\_o1 - t1)  *  a\_o1  *  (1 - a\_o1)  *  w_5 +  (a\_o2 - t2)  *  a\_o2  *  (1 - a\_o2)  *  w_7)  *  a\_h1  *  (1 - a\_h1)  *  i_2$
+- $∂E\\_total/∂w2 = ((a\\_o1 - t1)  *  a\\_o1  *  (1 - a\\_o1)  *  w5 +  (a\\_o2 - t2)  *  a\\_o2  *  (1 - a\\_o2)  *  w7)  *  a\\_h1  *  (1 - a\\_h1)  *  i2$
 
-- $∂E_total/∂w_3 = ((a\_o1 - t1)  *  a\_o1  *  (1 - a\_o1)  *  w_6 +  (a\_o2 - t2)  *  a\_o2  *  (1 - a\_o2)  *  w_8)  *  a\_h2  *  (1 - a\_h2)  *  i_1$
+- $∂E\\_total/∂w3 = ((a\\_o1 - t1)  *  a\\_o1  *  (1 - a\\_o1)  *  w6 +  (a\\_o2 - t2)  *  a\\_o2  *  (1 - a\\_o2)  *  w8)  *  a\\_h2  *  (1 - a\\_h2)  *  i1$
 
-- $∂E_total/∂w_4 = ((a\_o1 - t1)  *  a\_o1  *  (1 - a\_o1)  *  w_6 +  (a\_o2 - t2)  *  a\_o2  *  (1 - a\_o2)  *  w_8)  *  a\_h2  *  (1 - a\_h2)  *  i_2$
+- $∂E\\_total/∂w4 = ((a\\_o1 - t1)  *  a\\_o1  *  (1 - a\\_o1)  *  w6 +  (a\\_o2 - t2)  *  a\\_o2  *  (1 - a\\_o2)  *  w8)  *  a\\_h2  *  (1 - a\\_h2)  *  i2$
 
 
 By the calculations from above, we know
-$$ a\_o1=0.606477732 , a\_o2=0.630480835 $$ 
-$$ t1=0.5 , t2=0.5 $$
-$$a\_h1=0.506874567 , a\_h2=0.510623401$$
-$$ i1=0.5 , i2=0.05$$
+$$a\\_o1=0.606477732 , a\\_o2=0.630480835$$ 
+$$t1=0.5 , t2=0.5$$
+$$a\\_h1=0.506874567 , a\\_h2=0.510623401$$
+$$i1=0.5 , i2=0.05$$
 
 *hence*
 
