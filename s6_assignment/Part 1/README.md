@@ -73,8 +73,8 @@ Now we know the values for h1 and h2, we can calculate the activation function o
 $$σ(x) = 1/(1 + exp(-x))$$
 
 Hence the activation function a_h1 and a_h2 is calculated as
-$$a\_h1=1/(1 + exp(-h1))=0.506874567$$
-$$a\_h2=1/(1 + exp(-h2))=0.510623401$$
+$$a\\_h1=1/(1 + exp(-h1))=0.506874567$$
+$$a\\_h2=1/(1 + exp(-h2))=0.510623401$$
 
 
 ### 2. Calculating the Output Layer and its Activation Function
