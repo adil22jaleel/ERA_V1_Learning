@@ -33,7 +33,7 @@ In this project, we will delve into the details of backpropagation, explaining i
 
 ## Visualizing the BP
 
-![backpropagation_image](https://raw.githubusercontent.com/<adil22jaleel>/<era-v1-assignments>/<main>/<BP_main.jpg>)
+![backpropagation_image](s6_assignment/Part 1/Images/BP_main.jpg)
 
 The above diagram shows the simple flow of an artificial neural network with
 * one input layer (i1 and i2)
