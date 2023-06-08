@@ -124,7 +124,7 @@ For gradient calculation for the weights w5-w8, we are dividing the code into 3 
 Gradient for w5 is expressed as
 $$∂E\_total/∂w5 = ∂(E1 + E2)/∂w5$$
 $$∂E\_total/∂w5 = ∂E1/∂w5$$
-$$∂E\_total/∂w5 =∂E1/∂a\_o1*∂a\_o1/∂o1*∂o1/∂w5$$
+$$∂E\_total/∂w5 =∂E1/∂a_o1*∂a_o1/∂o1*∂o1/∂w5$$
 
 In the above second equation, the E2 component becomes zero because there weights w5 does not have derivaties or dependencies on the second error output provided
 
