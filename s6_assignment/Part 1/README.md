@@ -63,18 +63,18 @@ $$ w5= 0.4, w6=0.45 , w7=0.50 , w8=0.55 $$
 The hidden layer is calculated based on the input layer and the initialised weights. 
 
 **Hidden Layer formula**
-$$ h1=w1*i1 + w2*i2 $$
-$$ h2=w3*i1 + w4*i2 $$
-$$ h1=0.0275, h2=0.0425 $$
+$$h1=w1*i1 + w2*i2$$
+$$h2=w3*i1 + w4*i2$$
+$$h1=0.0275, h2=0.0425$$
 
 Now we know the values for h1 and h2, we can calculate the activation function over it. In this example we are using the sigmoid function.
 
 **Sigmoid Function**
-$$ σ(x) = 1/(1 + exp(-x))$$
+$$σ(x) = 1/(1 + exp(-x))$$
 
 Hence the activation function a_h1 and a_h2 is calculated as
-$$ a\_h1=1/(1 + exp(-h1))=0.506874567 $$
-$$ a\_h2=1/(1 + exp(-h2))=0.510623401 $$
+$$a\_h1=1/(1 + exp(-h1))=0.506874567$$
+$$a\_h2=1/(1 + exp(-h2))=0.510623401$$
 
 
 ### 2. Calculating the Output Layer and its Activation Function
