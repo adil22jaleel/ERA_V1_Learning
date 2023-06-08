@@ -52,9 +52,9 @@ Apart from the base layers there are other features like the weights, activation
 
 Now we have seen the different elements that are important for backpropagation algorithm to work, lets drill down through the algorithm and explain the various math that is used for calculating the outcomes. The backpropagation algorithm will go forward and backward on N number of iterations based on how the loss goes, the following step by step process helps in calculating for one complete iteration of backprop. Initially consider the following values
 
-$$  i1= 0.05 , i2=0.1$$
-$$ w1= 0.15, w2=0.2 , w3=0.25 , w4=0.3 $$
-$$ w5= 0.4, w6=0.45 , w7=0.50 , w8=0.55 $$
+$$i1= 0.05 , i2=0.1$$
+$$w1= 0.15, w2=0.2 , w3=0.25 , w4=0.3$$
+$$w5= 0.4, w6=0.45 , w7=0.50 , w8=0.55$$
 
 ### 1. Calculating the Hidden Layer and its Activation Function
 
@@ -86,12 +86,12 @@ If the hidden layer is calculated between inputs layer and input weights, the ou
 From step 1, we know the values for h1 ,h2 ,a_h1 and a_h2. We can use the similar for calculation.
 
 **Output Layer formula**
-$$ o1=w5*a_h1 + w6*a_h2 $$
-$$ o2=w7*a_h1 + w8*a_h2 $$
+$$o1=w5*a_h1 + w6*a\\_h2$$
+$$o2=w7*a_h1 + w8*a\\_h2$$
 
 After applying the sigmoid activation function
-$$ a\_o1=0.606477732$$
-$$ a\_o2=0.630480835 $$
+$$a\\_o1=0.606477732$$
+$$a\\_o2=0.630480835 $$
 
 ### 3. Calculating the Error
 
