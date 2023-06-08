@@ -231,32 +231,32 @@ We will be considering the following learning rates and see how the error change
 
 - For a learning rate =0.1, we see the error decreases linearly with the number of iterations as shown below.
 
-![lr_0_1](https://raw.githubusercontent.com/<adil22jaleel>/<era-v1-assignments>/<main>/<lr_0_1.jpg>)
+![lr_0_1](./Images/lr_0_1.jpg?raw=true)
 
 - Similary for a learning rate of 0.2, we see somewhat the same.
 
-![lr_0_2](https://raw.githubusercontent.com/<adil22jaleel>/<era-v1-assignments>/<main>/<lr_0_2.jpg>)
+![lr_0_2](./Images/lr_0_2.jpg?raw=true)
 
 - For learning rate= 0.5, there is a tiny exponential dip on the curve
 
-![lr_0_5](https://raw.githubusercontent.com/<adil22jaleel>/<era-v1-assignments>/<main>/<lr_0_5.jpg>)
+![lr_0_5](./Images/lr_0_5.jpg?raw=true)
 
 
 - For learning rate= 0.8, there is a clear evidence of the exponential bend on the error curve
 
-![lr_0_8](https://raw.githubusercontent.com/<adil22jaleel>/<era-v1-assignments>/<main>/<lr_0_8.jpg>)
+![lr_0_8](./Images/lr_0_8.jpg?raw=true)
 
 
 - For learning rate= 1, there loss was tending to zero in less number of iterations compared to the learning rate as 0.8
 
-![lr_1](https://raw.githubusercontent.com/<adil22jaleel>/<era-v1-assignments>/<main>/<lr_1.jpg>)
+![lr_1](./Images/lr_1.jpg?raw=true)
 
 - For learning rate=2, the loss tending to zero have almost become half the number of iterations to learning rate as 1.
 
-![lr_2](https://raw.githubusercontent.com/<adil22jaleel>/<era-v1-assignments>/<main>/<lr_2.jpg>)
+![lr_2](./Images/lr_2.jpg?raw=true)
 
 - For learning rate=1000, the loss is constant after the first iteration and hence does not add any good to the backpropagation.
 
-![lr_1000](https://raw.githubusercontent.com/<adil22jaleel>/<era-v1-assignments>/<main>/<lr_1000.jpg>)
+![lr_1000](./Images/lr_1000.jpg?raw=true)
 
 We can observe that the error approaches zero more quickly as the learning rate rises because the rate of change with each iteration shifts from linear to more exponential. As a result of the weights changing often due to a high learning rate, the ideal point may be overshot or convergence may occur more quickly.
