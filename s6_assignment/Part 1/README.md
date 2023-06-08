@@ -86,12 +86,12 @@ If the hidden layer is calculated between inputs layer and input weights, the ou
 From step 1, we know the values for h1 ,h2 ,a_h1 and a_h2. We can use the similar for calculation.
 
 **Output Layer formula**
-$$o1=w5*a_h1 + w6*a\\_h2$$
-$$o2=w7*a_h1 + w8*a\\_h2$$
+$$o1=w5 * a_h1 + w6 * a\\_h2$$
+$$o2=w7 * a_h1 + w8 * a\\_h2$$
 
 After applying the sigmoid activation function
 $$a\\_o1=0.606477732$$
-$$a\\_o2=0.630480835 $$
+$$a\\_o2=0.630480835$$
 
 ### 3. Calculating the Error
 
@@ -100,8 +100,8 @@ $$a\\_o2=0.630480835 $$
 To calculate the total error, we need to calculate the error that is obtained from all the output nodes in the output layer.
 
 **Error calculation formula**
-$$ E1=½ * (t1 - a\_o1)²$$
-$$ E2=½ * (t2- a\_o2)² $$
+$$E1=½ * (t1 - a\_o1)²$$
+$$E2=½ * (t2- a\_o2)² $$
 where t1 and t2 are the target variable names. We have assumed the target here as t1=t2=0.5
 
 The total error is the sum of all the errors from the output layer. Total Error is
