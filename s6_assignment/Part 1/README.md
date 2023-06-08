@@ -91,9 +91,10 @@ $$o2=w7 * a\\_h1 + w8 * a\\_h2$$
 
 After applying the sigmoid activation function
 
-$$a\\_o1 =0.606477732$$
-$$a\\_o2=0.630480835$$
 
+$$a\\_o1 =0.606477732$$ 
+
+$$a\\_o2=0.630480835$$
 ### 3. Calculating the Error
 
 **Objective: To calculate E**
@@ -102,6 +103,7 @@ To calculate the total error, we need to calculate the error that is obtained fr
 
 **Error calculation formula**
 $$E1=½ * (t1 - a\\_o1)²$$
+
 $$E2=½ * (t2- a\\_o2)²$$
 where t1 and t2 are the target variable names. We have assumed the target here as t1=t2=0.5
 
@@ -126,7 +128,9 @@ For gradient calculation for the weights w5-w8, we are dividing the code into 3 
 
 Gradient for w5 is expressed as
 $$∂E\\_total/∂w5 = ∂(E1 + E2)/∂w5$$
+
 $$∂E\\_total/∂w5 = ∂E1/∂w5$$
+
 $$∂E\\_total/∂w5 = ∂E1/∂a\\_o1 * ∂a\\_o1/∂o1 * ∂o1/∂w5$$
 
 In the above second equation, the E2 component becomes zero because there weights w5 does not have derivaties or dependencies on the second error output provided
