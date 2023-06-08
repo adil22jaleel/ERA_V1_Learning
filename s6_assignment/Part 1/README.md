@@ -32,7 +32,7 @@ It involves two main phases:
 In this project, we will delve into the details of backpropagation, explaining its steps, concepts, and implementation. Through a step-by-step breakdown, illustrative examples, we will break the backpropagation algorithm and equip you with the knowledge to implement and train neural networks effectively.
 
 ## Visualizing the BP
-![backpropagation_image](s6_assignment/Part 1/Images/BP_main.jpg?raw=true)
+![backpropagation_image](./Images/BP_main.jpg?raw=true)
 
 The above diagram shows the simple flow of an artificial neural network with
 * one input layer (i1 and i2)
