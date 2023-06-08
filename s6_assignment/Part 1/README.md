@@ -151,8 +151,8 @@ $$∂E\\_total/∂w8 = (a\\_o2 - t2) * a\\_o2 * (1 - a\\_o2) *  a\\_h2$$
 
 
 By the calculations from above, we know
-$$ a\\_o1=0.606477732 , a\\_o2=0.630480835 $$ 
-$$ t1=0.5 , t2=0.5 $$
+$$a\\_o1=0.606477732 , a\\_o2=0.630480835$$ 
+$$t1=0.5 , t2=0.5$$
 $$a\\_h1=0.506874567 , a\\_h2=0.510623401$$
 
 *hence*
@@ -173,7 +173,7 @@ $∂E_total/∂a\\_h1 = ∂E1/∂a\\_h1 + ∂E1/∂a\\_h2$
 
 $$∂E1/∂a\\_h1 = (a\\_01 - t1) * a\\_o1 * (1 - a\\_o1) * w5$$
 $$∂E2/∂a\\_h1 = (a\\_02 - t2) * a\\_o2 * (1 - a\\_o2) * w7$$
-Similar to the gradient descent of the hidden layer, we can derive $∂E_total/∂a\_h1 = ∂E_1/∂a\_h1 = ∂E_1/∂a\_o1 * ∂a\_o1/∂o1 * ∂o1/∂a\_h1$				
+Similar to the gradient descent of the hidden layer, we can derive $∂E\\_total/∂a\\_h1 = ∂E1/∂a\\_h1 = ∂E1/∂a\\_o1 * ∂a\\_o1/∂o1 * ∂o1/∂a\\_h1$				
 
 The equations can be written as 
 $$∂E1/∂a\\_o1 =  ∂(½  *  (t1 - a\\_o1)²)/∂a\\_o1 = (a\\_o1 - t1)$$
@@ -210,8 +210,8 @@ $$i1=0.5 , i2=0.05$$
 
 *hence*
 
-$$ ∂E/∂w1=0.000316993 ,∂E/∂w2=0.000633987 $$
-$$ ∂E/∂w3=0.000351869, ∂E/∂4=0.000703737 $$
+$$∂E/∂w1=0.000316993 ,∂E/∂w2=0.000633987$$
+$$∂E/∂w3=0.000351869, ∂E/∂4=0.000703737$$
 				
 ### 6. Calculating the new Weights
 
