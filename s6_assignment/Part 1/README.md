@@ -91,7 +91,7 @@ $$o2=w7 * a\\_h1 + w8 * a\\_h2$$
 
 After applying the sigmoid activation function
 
-$$a\\o1 =0.606477732$$
+$$a\\_o1 =0.606477732$$
 $$a\\_o2=0.630480835$$
 
 ### 3. Calculating the Error
