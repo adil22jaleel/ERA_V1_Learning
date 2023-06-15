@@ -95,3 +95,99 @@ The notebook analysis is explained below.
 6. For ReduceLRonPlateau, we are calling separate function for the testing, because for the learning rate change we have to pass the test loss. The function is specified in the utils.py as test_model_plateau
 
 7. It is visible that the training set slowly hits the 99% accuracy in the last few epochs whilst the testing accuracy crosses the 99.4 mark because of the learning rate change. 
+
+The following is the log for the last model
+
+'''
+EPOCH: 1
+
+  0%|          | 0/469 [00:00<?, ?it/s]/content/model.py:155: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  return F.log_softmax(x)
+Loss=0.15595975518226624 Batch_id=468 Accuracy=90.43: 100%|██████████| 469/469 [00:29<00:00, 16.15it/s]
+
+Test set: Average loss: 0.0795, Accuracy: 9773/10000 (97.73%)
+
+EPOCH: 2
+
+Loss=0.040991537272930145 Batch_id=468 Accuracy=97.40: 100%|██████████| 469/469 [00:20<00:00, 22.61it/s]
+
+Test set: Average loss: 0.0435, Accuracy: 9871/10000 (98.71%)
+
+EPOCH: 3
+
+Loss=0.0806039571762085 Batch_id=468 Accuracy=97.98: 100%|██████████| 469/469 [00:21<00:00, 21.51it/s]
+
+Test set: Average loss: 0.0357, Accuracy: 9895/10000 (98.95%)
+
+EPOCH: 4
+
+Loss=0.023201346397399902 Batch_id=468 Accuracy=98.19: 100%|██████████| 469/469 [00:21<00:00, 21.90it/s]
+
+Test set: Average loss: 0.0355, Accuracy: 9886/10000 (98.86%)
+
+EPOCH: 5
+
+Loss=0.012452361173927784 Batch_id=468 Accuracy=98.40: 100%|██████████| 469/469 [00:22<00:00, 21.16it/s]
+
+Test set: Average loss: 0.0294, Accuracy: 9911/10000 (99.11%)
+
+EPOCH: 6
+
+Loss=0.03821573406457901 Batch_id=468 Accuracy=98.47: 100%|██████████| 469/469 [00:21<00:00, 21.41it/s]
+
+Test set: Average loss: 0.0281, Accuracy: 9914/10000 (99.14%)
+
+EPOCH: 7
+
+Loss=0.01874718628823757 Batch_id=468 Accuracy=98.64: 100%|██████████| 469/469 [00:22<00:00, 21.20it/s]
+
+Test set: Average loss: 0.0236, Accuracy: 9933/10000 (99.33%)
+
+EPOCH: 8
+
+Loss=0.027351198717951775 Batch_id=468 Accuracy=98.68: 100%|██████████| 469/469 [00:20<00:00, 22.69it/s]
+
+Test set: Average loss: 0.0268, Accuracy: 9916/10000 (99.16%)
+
+EPOCH: 9
+
+Loss=0.03188159689307213 Batch_id=468 Accuracy=98.73: 100%|██████████| 469/469 [00:20<00:00, 22.44it/s]
+
+Test set: Average loss: 0.0219, Accuracy: 9935/10000 (99.35%)
+
+EPOCH: 10
+
+Loss=0.02450401335954666 Batch_id=468 Accuracy=98.78: 100%|██████████| 469/469 [00:22<00:00, 20.99it/s]
+
+Test set: Average loss: 0.0229, Accuracy: 9922/10000 (99.22%)
+
+EPOCH: 11
+
+Loss=0.02112734317779541 Batch_id=468 Accuracy=98.81: 100%|██████████| 469/469 [00:22<00:00, 21.11it/s]
+
+Test set: Average loss: 0.0254, Accuracy: 9921/10000 (99.21%)
+
+EPOCH: 12
+
+Loss=0.03854614868760109 Batch_id=468 Accuracy=98.87: 100%|██████████| 469/469 [00:21<00:00, 21.43it/s]
+
+Test set: Average loss: 0.0246, Accuracy: 9922/10000 (99.22%)
+
+EPOCH: 13
+
+Loss=0.006861161440610886 Batch_id=468 Accuracy=99.13: 100%|██████████| 469/469 [00:21<00:00, 21.50it/s]
+
+Test set: Average loss: 0.0193, Accuracy: 9942/10000 (99.42%)
+
+EPOCH: 14
+
+Loss=0.007884729653596878 Batch_id=468 Accuracy=99.13: 100%|██████████| 469/469 [00:20<00:00, 22.46it/s]
+
+Test set: Average loss: 0.0185, Accuracy: 9944/10000 (99.44%)
+
+EPOCH: 15
+
+Loss=0.04473526403307915 Batch_id=468 Accuracy=99.19: 100%|██████████| 469/469 [00:20<00:00, 22.43it/s]
+
+Test set: Average loss: 0.0186, Accuracy: 9945/10000 (99.45%)
+'''
