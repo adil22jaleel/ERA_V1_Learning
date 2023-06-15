@@ -12,10 +12,14 @@ The objective of this exercise is to create a powerful CNN model that can recogn
 ## Model Design
 
 We will go more into how we might design an architecture that can deliver the results we anticipate while sticking to the predetermined constraints.
+There are a total of 3 notebooks that contains multiple codes of sequence of creating a CNN model. Apart from these notebooks, there are model.py and utils.py which have the following functions
+- [model.py](https://github.com/adil22jaleel/era-v1-assignments/blob/s7/s7_assignment/model.py) : Contains various Neural Network Architectures that are used for the model development
+- [utils.py](https://github.com/adil22jaleel/era-v1-assignments/blob/s7/s7_assignment/utils.py) : Contains the various data loading, training and testing codes for the model development
+The notebook analysis is explained below.
 
 ## Step 1
 
-### File Link: [Step 1 Notebook](https://pages.github.com/)
+### File Link: [Step 1 Notebook](https://github.com/adil22jaleel/era-v1-assignments/blob/s7/s7_assignment/S7_Step1.ipynb)
 
 ### Target:
 1. Setting up a skeleton for the neural network
@@ -35,7 +39,7 @@ We will go more into how we might design an architecture that can deliver the re
 
 ## Step 2
 
-### File Link: [Step 2 Notebook](https://pages.github.com/)
+### File Link: [Step 2 Notebook](https://github.com/adil22jaleel/era-v1-assignments/blob/s7/s7_assignment/S7_Step2.ipynb)
 
 ### Target:
 1. Introduce batch normalisation for performance improvement
@@ -63,7 +67,7 @@ We will go more into how we might design an architecture that can deliver the re
 
 ## Step 3
 
-### File Link: [Step 3 Notebook](https://pages.github.com/)
+### File Link: [Step 3 Notebook](https://github.com/adil22jaleel/era-v1-assignments/blob/s7/s7_assignment/S7_Step3.ipynb)
 
 ### Target:
 1. Acheive accuracy of 99.4 by involving image augmentation and if required by reduction of the learning rate 
