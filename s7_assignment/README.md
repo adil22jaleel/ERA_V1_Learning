@@ -4,8 +4,8 @@
 
 The objective of this exercise is to create a powerful CNN model that can recognise handwritten numbers in the MNIST dataset. The neural network's design will be based on a few factors, including:
 
-- 99.4% accuracy
-- Less than or equal to 15 Epochs
+- 99.4% accuracy in atleast 2 epochs
+- Less than or equal to 15 epochs
 - Less than 8000 Parameters
 - Using modular code
 
@@ -94,7 +94,9 @@ The notebook analysis is explained below.
 
 6. For ReduceLRonPlateau, we are calling separate function for the testing, because for the learning rate change we have to pass the test loss. The function is specified in the utils.py as test_model_plateau
 
-7. It is visible that the training set slowly hits the 99% accuracy in the last few epochs whilst the testing accuracy crosses the 99.4 mark because of the learning rate change. 
+7. It is visible that the training set slowly hits the 99% accuracy in the last few epochs whilst the testing accuracy crosses the 99.4 mark because of the learning rate change.
+   
+8. The test accuracy crosses 99.4% in the last 3 epochs.
 
 The following is the log for the last model
 
