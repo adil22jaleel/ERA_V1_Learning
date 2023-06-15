@@ -53,13 +53,13 @@ The notebook analysis is explained below.
 
 ### Analysis:
 
-1. In the code 2 of this step, we are reducing the number of input and output channels to reduce the number of parameters and adding batch normalisation. The batch normalisation improves the performance of model training under each epoch
+1. In code 2 of this step, we are reducing the number of input and output channels to reduce the number of parameters and adding batch normalisation. The batch normalisation improves the performance of model training under each epoch
 
 2. The code 2 model had overfitting issues still, with the difference between the training and testing accuracy being similar
 
 3. To trim the overfitting issues, we introduced dropout with a dropout rate of 0.05 (This is added in the model.py) (code 3)
 
-4. Now to reduce the number of parameters under 8k, 1x1 convolutions (code 4) were introduced along with additional convolution layer. The main purpose of a 1x1 convolution is to transform the channel dimension of the input feature maps. By altering the number of channels, it can change the dimensionality of the feature space.Now the number of parameters have reduced under 8k.
+4. Now to reduce the number of parameters under 8k, 1x1 convolutions (code 4) were introduced along with an additional convolution layer. The main purpose of a 1x1 convolution is to transform the channel dimension of the input feature maps. By altering the number of channels, it can change the dimensionality of the feature space. Now the number of parameters has reduced to under 8k.
 
 5. The training accuracy slowly in the last epoch crosses the 99% accuracy but test accuracy is not still hitting above 99.3%
 
@@ -70,7 +70,7 @@ The notebook analysis is explained below.
 ### File Link: [Step 3 Notebook](https://github.com/adil22jaleel/era-v1-assignments/blob/s7/s7_assignment/S7_Step3.ipynb)
 
 ### Target:
-1. Acheive accuracy of 99.4 by involving image augmentation and if required by reduction of the learning rate 
+1. Achieve accuracy of 99.4 by involving image augmentation and if required by reduction of the learning rate 
 
 2. Make sure the parameters are below 8k and 15 epochs
 
@@ -98,7 +98,7 @@ The notebook analysis is explained below.
 
 The following is the log for the last model
 
-'''
+```
 EPOCH: 1
 
   0%|          | 0/469 [00:00<?, ?it/s]/content/model.py:155: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
@@ -190,4 +190,4 @@ EPOCH: 15
 Loss=0.04473526403307915 Batch_id=468 Accuracy=99.19: 100%|██████████| 469/469 [00:20<00:00, 22.43it/s]
 
 Test set: Average loss: 0.0186, Accuracy: 9945/10000 (99.45%)
-'''
+```
