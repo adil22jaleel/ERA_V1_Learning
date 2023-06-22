@@ -42,6 +42,12 @@ The constructor (__init__) takes parameters to specify which normalization techn
 
 ![bn_gn_ln](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/images/bn_gn_ln.png)
 
+
+The following is the model structure for GN model.
+
+![model_structure](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/images/model_structure.png)
+
+
 #### [utils.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/utils.py)
 
 This Python script defines a utility function for printing the summary of a PyTorch model using the torchsummary package. The function print_summary takes a model instance and an optional input_size parameter as input and displays a summary of the model's architecture.
