@@ -12,11 +12,11 @@
 ### Code Overview
 This code aims to study the impact of various normalization techniques on a CNN model trained on the CIFAR dataset. It includes the following
 
-#### [dataset.py](https://pages.github.com/)
+#### [dataset.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/dataset.py)
 
 This code provides a function get_loader that helps in obtaining instances of train and test data loaders for the CIFAR-10 dataset. The CIFAR-10 dataset consists of 60,000 32x32 color images in 10 classes, with 6,000 images per class. This dataset is commonly used for image classification tasks.
 
-#### [model.py](https://pages.github.com/)
+#### [model.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/model.py)
 
 This code file contains implementations of multiple models for various tasks, such as image classification, object detection, or generative tasks. Each model is implemented as a separate class, providing modularity and flexibility for different use cases. Below is an overview of the available models:
 
@@ -40,13 +40,13 @@ The constructor (__init__) takes parameters to specify which normalization techn
 
 - Layer Normalization (LN): Over all channel for each image.
 
-![bn_gn_ln](https://raw.githubusercontent.com/<adil22jaleel>/<era-v1-assignments>/<main>/<lr_1.jpg>)
+![bn_gn_ln](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/images/bn_gn_ln.png)
 
-#### [utils.py](https://pages.github.com/)
+#### [utils.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/utils.py)
 
 This Python script defines a utility function for printing the summary of a PyTorch model using the torchsummary package. The function print_summary takes a model instance and an optional input_size parameter as input and displays a summary of the model's architecture.
 
-#### [backpropagation.py](https://pages.github.com/)
+#### [backpropagation.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/backpropagation.py)
 
 The backpropagation.py script implements the backpropagation algorithm for training neural networks. It contains functions for training and testing a model using the backpropagation algorithm.
 
@@ -56,7 +56,7 @@ train(model, device, train_loader, optimizer, epoch, train_acc, train_losses, ru
 
 test(model, device, test_loader, test_acc, test_losses, runName): Evaluates the model using the test data. It takes the model, device, test data loader, test accuracy list, test loss list, and run name as inputs. It returns the updated test accuracy and loss lists, as well as the average test loss.
 
-#### [visualize.py](https://pages.github.com/)
+#### [visualize.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/visualize.py)
 
 The visualize.py script is used for visualizing the training process and results of a neural network model. It provides functions to plot various metrics such as input image , accuracy and loss during training.
 
@@ -68,38 +68,31 @@ The visualize.py script is used for visualizing the training process and results
 
 - Train Accuracy: 78.58%
 - Test Accuracy: 77.60%
-
-![bn_gn_ln](https://raw.githubusercontent.com/<adil22jaleel>/<era-v1-assignments>/<main>/<lr_1.jpg>)
+- Misclassified Images
+  
+![groupnorm.png](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/images/groupnorm.png)
 
 2. Network with Layer Normalization
 
 - Train Accuracy: 78.07%
 - Test Accuracy: 76.45%
+- Misclassified Images
 
-![bn_gn_ln](https://raw.githubusercontent.com/<adil22jaleel>/<era-v1-assignments>/<main>/<lr_1.jpg>)
+![layernorm.png](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/images/layernorm.png)
 
 3. Network with Batch Normalization
 - Train Accuracy: 78.18%
 - Test Accuracy: 76.96%
-
-![bn_gn_ln](https://raw.githubusercontent.com/<adil22jaleel>/<era-v1-assignments>/<main>/<lr_1.jpg>)
+- Misclassified Images
+![batchnorm.png](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/images/batchnorm.png)
 
 
 ### Accuracy & Loss Plots for Training and Test
 
-![bn_gn_ln](https://raw.githubusercontent.com/<adil22jaleel>/<era-v1-assignments>/<main>/<lr_1.jpg>)
+![loss_plot](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/images/loss_plot.png)
 
-![bn_gn_ln](https://raw.githubusercontent.com/<adil22jaleel>/<era-v1-assignments>/<main>/<lr_1.jpg>)
+![accuracyplot.png](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/images/accuracyplot.png)
 
 
 ### Analysis of different Normalisation techniques
 
-Group Normalisation performs normalisation in small groups of channels for a given image. As number of groups increase, it has a better regularising effect.
-
-Layer Normalisation is performing worst since it is doing normalisation across all channels of each image. This is a special case of Group Normalisation with just 1 group.
-
-Batch Normalisation performs normalisation for each channel across all images of a batch.
-
-Layer Normalisation is ill-equipped to address Internal Covariate Shift (ICS) in CNNs since it normalises each image independently.
-
-Thus batch normalisation is performing the best here since normalisation is done on a channel for entire batch, that too on images which are shuffled in train loader, thus better correcting ICS.
