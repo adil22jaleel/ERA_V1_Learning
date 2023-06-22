@@ -103,3 +103,5 @@ In comparison, all three normalization techniques are having similar accuracy.
 - Since layer normalization normalizes every channel of every image, it performs the worst. This is a unique instance of group normalization involving only one group.
 
 - Using batch normalization, all of the images in a batch are normalized for each channel.
+
+In conclusion, the choice of normalization method depends on the particular specifications and features of the issue. Layer Normalisation is appropriate for sequential data or when batch statistics are incorrect, while Batch Normalisation is beneficial for higher batch sizes. By functioning well with smaller batch sizes and providing some level of independence within channel groups, group normalization presents a compromise.
