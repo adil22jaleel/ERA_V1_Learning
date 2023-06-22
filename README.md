@@ -1,2 +1,2 @@
-# ERA_V1_Learning
-Repository handles all the code that is realted to the TSAI ERA certification
+# ERA-V1-Assignments
+Repository is about the different assignments that is related to different type of application of artificial intelligence. 
