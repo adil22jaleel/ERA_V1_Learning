@@ -94,5 +94,12 @@ The visualize.py script is used for visualizing the training process and results
 ![accuracyplot.png](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s8_assignment/images/accuracyplot.png)
 
 
-### Analysis of different Normalisation techniques
+### Final Analysis
 
+In comparison, all three normalization techniques are having similar accuracy.
+
+- For a specific image, group normalization conducts normalization for discrete channels. Increased group size improves the regularising impact.
+
+- Since layer normalization normalizes every channel of every image, it performs the worst. This is a unique instance of group normalization involving only one group.
+
+- Using batch normalization, all of the images in a batch are normalized for each channel.
