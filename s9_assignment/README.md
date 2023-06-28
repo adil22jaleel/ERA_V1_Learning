@@ -15,7 +15,7 @@
 
 ## Code Structure
 
-### [dataset.py]()
+### [dataset.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/dataset.py)
 
 The dataset.py file provides classes and functions for loading and preprocessing the CIFAR-10 dataset using PyTorch and Albumentations.
 
@@ -41,10 +41,10 @@ The dataset.py file provides classes and functions for loading and preprocessing
     - CoarseDropout randomly removes rectangular regions from an image. This can be used to help a model learn to recognize objects even when they are partially obscured.   
 
 The following image shows the image post augmentation.
-![image_augmentation]()
+![image_augmentation](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/images/albumentation.png)
 
 
-### [model.py]()
+### [model.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/model.py)
 
 
 #### Model Architecture
@@ -78,9 +78,9 @@ The following image shows the image post augmentation.
 The output logits are passed through a log softmax function for classification.
 
 
-![model_archi]()
+![model_archi](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/images/model_summary_png.png)
 
-#### Receiptive Field Calculation
+#### Receptive Field Calculation
 
 |Block |	Layer|	Input RF|	Input Size|	Jump In|	Stride|	Padding|	Kernel Size|	Dilation|	Eff. Kernel Size|	Output RF|	Output Size|	Jump Out|
 |------|---------|----------|-------------|--------|----------|--------|---------------|------------|-------------------|------------|-------------|------------|
@@ -105,7 +105,7 @@ Conv Block 4 + Skip|	conv18|	47|	4|	4|	1|	0|	1|	1|	1|	47|	4|	4|
 Output Block|	gap|	47|	4|	4|	4|	0|	4|	1|	4|	59|	1|	16|
 
 
-### [backpropgation.py]()
+### [backpropgation.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/backpropagation.py)
 
 
 The backpropagation.py script implements the backpropagation algorithm for training neural networks. It contains functions for training and testing a model using the backpropagation algorithm.
@@ -116,7 +116,7 @@ train(model, device, train_loader, optimizer, epoch, train_acc, train_losses, L1
 
 test(model, device, test_loader, test_acc, test_losses): Evaluates the model using the test data. It takes the model, device, test data loader, test accuracy list, test loss list as inputs. It returns the updated test accuracy and loss lists, as well as the average test loss.
 
-### [visualize.py]()
+### [visualize.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/visualize.py)
 
 This script provides functions to visualize the misclassified images and plot the training and test statistics.
 
@@ -131,7 +131,7 @@ This script provides functions to visualize the misclassified images and plot th
 - test_plot_stats(test_losses, test_accuracies)
     - This function plots the test loss and accuracy statistics.
 
-### [utils.py]()
+### [utils.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/utils.py)
 
 This Python script defines a utility function for printing the summary of a PyTorch model using the torchsummary package. The function print_summary takes a model instance and an optional input_size parameter as input and displays a summary of the model's architecture.
 
@@ -275,9 +275,9 @@ Test set: Average loss: 0.4353, Accuracy: 8528/10000 (85.28%)
 
 ### Accuracy and Loss Plots
 
-![training_plots]()
+![training_plots](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/images/training_metrics.png)
 
-![test_plots]()
+![test_plots](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/images/test_metrics.png)
 
 ### Misclassified Images
-![misclassified_images]()
+![misclassified_images](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/images/misclassified.png)
