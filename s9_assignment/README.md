@@ -105,7 +105,7 @@ Conv Block 4 + Skip|	conv18|	47|	4|	4|	1|	0|	1|	1|	1|	47|	4|	4|
 Output Block|	gap|	47|	4|	4|	4|	0|	4|	1|	4|	59|	1|	16|
 
 
-### [backpropgation.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/backpropagation.py)
+### [backpropagation.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/backpropagation.py)
 
 
 The backpropagation.py script implements the backpropagation algorithm for training neural networks. It contains functions for training and testing a model using the backpropagation algorithm.
@@ -114,7 +114,34 @@ The backpropagation.py script provides the following functions:
 
 train(model, device, train_loader, optimizer, epoch, train_acc, train_losses, L1flag=False): Performs the training of the model using the backpropagation algorithm. It takes the model, device, training data loader, optimizer, epoch number, training accuracy list, training loss list, and an optional L1 regularization flag as inputs. It returns the updated training accuracy and loss lists.
 
+Training Function:
+- The train function takes in the model, device, training data loader, optimizer, epoch number, and lists to store training accuracy and losses as input arguments.
+- It sets the model to training mode using model.train() and initializes a progress bar (pbar) to display the training progress.
+- Within each training batch, it performs the following steps:
+    - Moves the data and target tensors to the specified device using data.to(device) and target.to(device).
+    - Resets the gradients of the optimizer using optimizer.zero_grad().
+    - Forward passes the data through the model to obtain the predicted output (y_pred).
+    - Calculates the loss between the predicted output and the target using the negative log-likelihood loss (F.nll_loss).
+    - If the L1flag is set to True, it performs L1 regularization by adding a penalty term to the loss for each parameter in the model.
+    - Appends the loss value to the train_losses list.
+    - Performs backpropagation by calling loss.backward() to compute gradients.
+    - Updates the model's parameters using the optimizer's update rule (optimizer.step()).
+    - Updates the progress bar with the current loss and accuracy.
+- Finally, it returns the lists of training accuracy and losses.
+
+  
 test(model, device, test_loader, test_acc, test_losses): Evaluates the model using the test data. It takes the model, device, test data loader, test accuracy list, test loss list as inputs. It returns the updated test accuracy and loss lists, as well as the average test loss.
+
+Testing Function:
+- The test function is responsible for evaluating the trained model on a separate test dataset.
+- It sets the model to evaluation mode using model.eval() and initializes variables to track the test loss and correct predictions.
+- It iterates through the test dataset and performs the following steps:
+    - Moves the data and target tensors to the specified device.
+    - Forward passes the data through the model to obtain the output.
+    - Calculates the test loss using the negative log-likelihood loss and sums it up.
+    - Computes the number of correct predictions by comparing the predicted output with the target.
+    - After iterating through the test dataset, it calculates the average test loss and accuracy and prints the results.
+-Finally, it returns the lists of test accuracy and losses.
 
 ### [visualize.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/visualize.py)
 
