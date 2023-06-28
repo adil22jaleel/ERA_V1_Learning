@@ -143,6 +143,7 @@ This Python script defines a utility function for printing the summary of a PyTo
 - Test accuracy: 85.28%
 - Number of epochs model trained: 25
 - Number of parameters: 178,178 parameters
+- Final Receptive Field of 59
 
 ### Training Log
 ```
@@ -274,9 +275,10 @@ Test set: Average loss: 0.4353, Accuracy: 8528/10000 (85.28%)
 
 
 ### Accuracy and Loss Plots
-
+#### Training Loss and Training Accuracy
 ![training_plots](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/images/training_metrics.png)
 
+#### Test Loss and Test Accuracy
 ![test_plots](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s9_assignment/images/test_metrics.png)
 
 ### Misclassified Images
