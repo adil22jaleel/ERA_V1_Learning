@@ -33,7 +33,7 @@
 
 ## Code Structure
 
-### [dataset.py]()
+### [dataset.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s10_assignment/main/dataset.py)
 
 The dataset.py file provides classes and functions for loading and preprocessing the CIFAR-10 dataset using PyTorch and Albumentations.
 
@@ -62,10 +62,10 @@ The dataset.py file provides classes and functions for loading and preprocessing
     - ToTensorV2: Converts the image to a PyTorch tensor.
 
 The following image shows the image post augmentation.
-![image_augmentation]()
+![image_augmentation](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s10_assignment/assets/post_normalizer.png)
 
 
-### [model.py]()
+### [custom_resnet.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s10_assignment/main/custom_resnet.py)
 
 
 #### Model Architecture
@@ -107,11 +107,11 @@ The ResBlock class defines a single residual block. It performs two sets of conv
 
 - forward method: This method defines the forward pass of the model. It sequentially passes the input through each layer and applies element-wise addition between the output of layer1_X and the output of the first residual block (R1). Similarly, it applies element-wise addition between the output of layer3_X and the output of the second residual block (R3). Finally, it performs a softmax activation on the output and returns the result.
 
-![model_archi]()
+![model_archi](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s10_assignment/assets/model_architecture.png)
 
 
 
-### [backpropgation.py]()
+### [backpropgation.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s10_assignment/main/backpropagation.py)
 
 
 
@@ -139,7 +139,7 @@ The test function in the script is responsible for evaluating the model on the t
 - Calculate the loss between the predictions and the target labels using the specified criterion.
 - Update the tracked variables (loss, accuracy, processed samples) for reporting.
 
-### [visualize.py]()
+### [visualize.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s10_assignment/main/visualize.py)
 
 This script provides functions to visualize the misclassified images and plot the training and test statistics.
 
@@ -154,7 +154,7 @@ This script provides functions to visualize the misclassified images and plot th
 - test_plot_stats(test_losses, test_accuracies)
     - This function plots the test loss and accuracy statistics.
 
-### [utils.py]()
+### [utils.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s10_assignment/main/utils.py)
 
 This Python script defines a utility function for printing the summary of a PyTorch model using the torchsummary package. The function print_summary takes a model instance and an optional input_size parameter as input and displays a summary of the model's architecture.
 
@@ -188,7 +188,8 @@ _, best_lr = lr_finder.plot()
 ```python
 lr_finder.reset()
 ```
-
+The following diagram shows how the max LR is retrieved from the lr finder plot. 
+![lr_finder](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s10_assignment/assets/lr_finder.png)
 ## Inferences and Analysis
 
 
@@ -447,4 +448,4 @@ Test Accuracy: 93.08
 
 
 ### Misclassified Images
-![misclassified_images]()
+![misclassified_images](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s10_assignment/assets/misclassified.png)
