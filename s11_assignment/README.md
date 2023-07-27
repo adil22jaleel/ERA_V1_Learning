@@ -59,7 +59,7 @@ The different data augmentations applied are
     - RandomCrop of 32 x 32
     - Cutout of 8 & 8
 
-![normalisedimages](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s11_assignment/images/normalized image.png)
+![normalisedimages](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s11_assignment/images/normalized%20image.png)
 
 - get_device function:
 
