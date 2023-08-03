@@ -1,6 +1,6 @@
 # CIFAR-10 Classification using Lightning Module
 This repository contains code for training a ResNet-based model for CIFAR-10 classification using PyTorch Lightning. The model architecture includes custom ResBlocks for feature extraction. Albumentations library is used for data augmentation. The code also includes functionality for GradCAM visualization of misclassified images.
-
+## Hugging Face Space Link- [Hugging Face Space](https://huggingface.co/spaces/adil22jaleel/CIFAR_ResnetModel)
 ## Understanding the different functions
 
 ### ResBlock
@@ -70,6 +70,10 @@ The class includes methods, show_misclassified_images and get_gradcam_images, fo
 TensorBoard is a visualization tool provided by TensorFlow that allows you to monitor and analyze various aspects of your machine learning models during training and evaluation. The following are the plots from the tensorboard.
 
 ### Plots 
-![]()
+Train Accuracy![train_acc](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s12_assignment/images/train_acc.jpg)
+Train Loss![train_loss](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s12_assignment/images/train_loss.jpg)
+Validation Accuracy![val_acc](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s12_assignment/images/val_acc.jpg)
+Validation Loss![val_loss](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s12_assignment/images/val_loss.jpg)
+
 Model Test Accuracy: 90%
 Model Test Loss: 0.30
