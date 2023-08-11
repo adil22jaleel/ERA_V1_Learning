@@ -203,14 +203,21 @@ MAP (Mean Average Precision) is a widely used metric in object detection tasks, 
 
 
 ### Model Metrics Plots
+
 Train Accuracy
+
 ![train_acc.jpg](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/images/train_acc.jpg)
 
 Train Loss
+
 ![train_loss.jpg](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/images/train_loss.jpg)
 
+
 Test Accuracy
+
 ![test_acc.jpg](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/images/test_acc.jpg)
 
+
 Test Loss
+
 ![test_loss.jpg](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/images/test_loss.jpg)
