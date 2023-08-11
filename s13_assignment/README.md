@@ -10,11 +10,11 @@ The objective of the project is to make several enhancements to an existing YOLO
 
 ## Hardware Used: Google Colab Pro A100 GPU 
 
-## [Hugging Face Space App Link: ]()
+## [Hugging Face Space App Link: ](https://huggingface.co/spaces/adil22jaleel/Yolo-V3-Pytorch-Lightning)
 
 ## Code Structure
 
-1. [config.py]()
+1. [config.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/config.py)
 
 Configuration Parameters:
 
@@ -43,7 +43,7 @@ Configuration Parameters:
 
 This configuration file sets up the necessary parameters and transformations to preprocess images and labels for training and testing an object detection model using YOLOv3. The provided anchor boxes and class labels are specific to the PASCAL VOC dataset, which contains various common object classes.
 
-2. [utils.py]()
+2. [utils.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/utils.py)
 
 The utils.py file contains a collection of utility functions that are used in conjunction with the YOLOv3 object detection model. 
 
@@ -81,11 +81,11 @@ The utils.py file contains a collection of utility functions that are used in co
 
 These utility functions provide essential functionalities for working with YOLOv3 models and performing various tasks related to object detection and evaluation.
 
-3. [dataset.py]()
+3. [dataset.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/dataset.py)
 
 The provided code defines two PyTorch datasets, YOLOTrainDataset and YOLOTestDataset, for loading images and their corresponding annotations from the Pascal VOC and MS COCO datasets.
 
-4. [loss.py]()
+4. [loss.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/loss.py)
 
 YoloLoss Class:
 
@@ -95,7 +95,7 @@ Initializes various loss functions and constants that weigh different components
 The loss computation consists of four main components: no-object loss, object loss, box coordinates loss, and class loss.
 
 
-5. [callback.py]()
+5. [callback.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/callback.py)
 
 The provided code defines three custom callback classes that can be used with PyTorch Lightning's training loop. Callbacks are functions or methods that are executed at specific points during training and can be used for various purposes such as logging, visualization, and custom metrics calculation. This is something very new that is learnt with the lightning module.
 
@@ -106,7 +106,7 @@ Main 3 callbaks are
 
 These custom callbacks provide additional functionality beyond the standard PyTorch Lightning callbacks, allowing you to perform specialized actions during training epochs. 
 
-6. [model.py]()
+6. [model.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/model.py)
 
 The provided code defines the implementation of the YOLOv3 architecture for object detection. 
 
@@ -134,7 +134,7 @@ It also handles the forward pass through the network, producing predictions at d
 The architecture incorporates residual blocks, upsampling, and scale prediction layers as specified in the configuration.
 This class also includes an example of model instantiation and forward pass with random input data to verify the shapes of the output predictions.
 
-7. [yolo_lightning.py]()
+7. [yolo_lightning.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/yolo_lightning.py)
 
 Initialization and Model Setup:
 
@@ -195,19 +195,22 @@ MAP (Mean Average Precision) is a widely used metric in object detection tasks, 
 
 ### Sample Outcomes
 
-![sample1.png]()
+![sample1.png](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/images/sample1.png)
 
-![sample2.png]()
+![sample2.png](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/images/sample2.png)
 
-
-![sample3.png]()
+![sample3.png](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/images/sample3.png)
 
 
 ### Model Metrics Plots
-![train_acc.]()
+Train Accuracy
+![train_acc.jpg](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/images/train_acc.jpg)
 
-![train_loss.]()
+Train Loss
+![train_loss.jpg](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/images/train_loss.jpg)
 
-![test_acc.]()
+Test Accuracy
+![test_acc.jpg](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/images/test_acc.jpg)
 
-![test_loss.]()
+Test Loss
+![test_loss.jpg](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s13_assignment/images/test_loss.jpg)
