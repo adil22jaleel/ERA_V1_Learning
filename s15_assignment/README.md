@@ -2,15 +2,15 @@
 
 This repository contains the code for training a transformer-based machine translation model using PyTorch and PyTorch Lightning. The project is structured into several files:
 
-[model.py](): Defines the transformer architecture for machine translation.
+[model.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s15_assignment/model.py): Defines the transformer architecture for machine translation.
 
-[config.py](): Contains configuration parameters for the training process.
+[config.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s15_assignment/config.py): Contains configuration parameters for the training process.
 
-[dataset.py](): Implements the dataset loader and preprocessing for machine translation data.
+[dataset.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s15_assignment/dataset.py): Implements the dataset loader and preprocessing for machine translation data.
 
-[train.py](): Contains the training loop and logic for training the machine translation model.
+[train.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s15_assignment/train.py): Contains the training loop and logic for training the machine translation model.
 
-[custom_transformer_lightning.py](): Implements a custom PyTorch Lightning module for training and evaluation.
+[custom_transformer_lightning.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s15_assignment/custom_transformer_lightning.py): Implements a custom PyTorch Lightning module for training and evaluation.
 
 ## Model Architecture (model.py)
 The model.py file defines the transformer architecture used for machine translation. It includes components such as:
