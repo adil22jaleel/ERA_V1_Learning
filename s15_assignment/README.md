@@ -35,7 +35,7 @@ The custom_transformer_lightning.py file implements a custom PyTorch Lightning m
 
 ## Training Log
 Final Train Loss: 3.7000
-![]()
+![Loss](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s15_assignment/images/val_loss.jpg)
 
 ```
   | Name    | Type             | Params
