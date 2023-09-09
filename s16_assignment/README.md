@@ -1,16 +1,16 @@
 # Custom Transformer-Based Machine Translation: English to French
 
-# Final Loss: 1.
+# Final Loss: 1.7
 
 This repository contains the code for training a transformer-based machine translation model using PyTorch. The project is structured into several files:
 
-[model.py](): Defines the transformer architecture for machine translation.
+[model.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s16_assignment/model.py): Defines the transformer architecture for machine translation.
 
-[config.py](): Contains configuration parameters for the training process.
+[config.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s16_assignment/config.py): Contains configuration parameters for the training process.
 
-[dataset.py](): Implements the dataset loader and preprocessing for machine translation data.
+[dataset.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s16_assignment/dataset.py): Implements the dataset loader and preprocessing for machine translation data.
 
-[train.py](): Contains the training loop and logic for training the machine translation model.
+[train.py](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s16_assignment/train.py): Contains the training loop and logic for training the machine translation model.
 
 
 ## Model Architecture (model.py)
