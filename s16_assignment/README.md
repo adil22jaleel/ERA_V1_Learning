@@ -1,6 +1,8 @@
 # Custom Transformer-Based Machine Translation: English to French
 
-# Final Loss: 1.7
+# Final Loss: 1.684
+# Total Epochs Ran: 50
+# Epoch in which loss became under 1.8: 26th Epoch
 
 This repository contains the code for training a transformer-based machine translation model using PyTorch. The project is structured into several files:
 
