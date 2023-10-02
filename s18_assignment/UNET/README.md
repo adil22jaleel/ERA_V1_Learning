@@ -1,11 +1,11 @@
-# UNET on Oxford Pet Dataset
+# UNET on Oxford Dataset
 This folder contains the UNET implementation on the [Oxford Pets dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/).
 
 ## Results
 
 ### Max Pooling +Transpose Conv + Binary Cross-Entropy
 
-![image]()
+![image](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s18_assignment/assets/mp_tconv_bce_comparison.png)
 ```
 Epoch 15/20
 94/94 [==============================] - 3s 37ms/step - loss: 0.7207 - accuracy: 0.7109 - val_loss: 0.7379 - val_accuracy: 0.7020
@@ -23,12 +23,12 @@ Epoch 20/20
 1/1 [==============================] - 1s 704ms/step
 ```
 Sample Prediction:
-![image]())
+![image](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s18_assignment/assets/mp_tconv_bce.png)
 
 
 ### Max Pooling + Transpose Conv + Dice Loss
 
-![image]()
+![image](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s18_assignment/assets/mp_tconv_dice_comparison.png)
 
 ```
 Epoch 15/20
@@ -47,10 +47,10 @@ Epoch 20/20
 1/1 [==============================] - 0s 333ms/step
 ```
 Sample prediction:
-![image]()
+![image](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s18_assignment/assets/mp_tconv_dice.png)
 
 ### Strided Convolution + Transpose Conv + Binary Cross Entropy
-![image]()
+![image](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s18_assignment/assets/sconv_tconv_bce_comparison.png)
 
 ```
 Epoch 15/20
@@ -69,11 +69,11 @@ Epoch 20/20
 1/1 [==============================] - 0s 415ms/step
 ```
 Sample Prediction:
-![image]()
+![image](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s18_assignment/assets/sconv_tconv_bce.png)
 
 ### Strided Conv + Up Sampling + Dice Loss
 
-![image]()
+![image](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s18_assignment/assets/sconv_sampling_dice_comparison.png)
 
 ```
 Epoch 15/20
@@ -92,4 +92,4 @@ Epoch 20/20
 1/1 [==============================] - 0s 302ms/step
 ```
 Sample Prediction:
-![image]()
+![image](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s18_assignment/assets/sconv_sampling_dice.png)
