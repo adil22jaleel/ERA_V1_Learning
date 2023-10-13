@@ -30,8 +30,16 @@ Hugging Face Link: [Hugging Face Link](https://huggingface.co/spaces/adil22jalee
 ![HF3](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s20_assignment/gradio_ui_colab3.png)
 
 
+## Creative Loss
 
+Contrast Loss: A loss that encourages images to have higher contrast. You can calculate the variance of pixel values in the image.
+```
+def contrast_loss(images):
+    # Calculate the variance of pixel values as a measure of contrast.
+    variance = torch.var(images)
+    return -variance
 
+```
 
 ## Code Walkthrough
 
