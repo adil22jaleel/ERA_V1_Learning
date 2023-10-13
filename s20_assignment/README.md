@@ -14,20 +14,20 @@ The combination of "Stable Diffusion" and "Contrast Loss" suggests that this is 
 An astronaut like a cat
 ```
 
-![alt text](http://url/to/img.png)
+![output1](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s20_assignment/output1.png)
 
-![alt text](http://url/to/img.png)
+![output2](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s20_assignment/output2.png)
 
 ### Hugging Face
 
 Hugging Face Link: [Hugging Face Link](https://huggingface.co/spaces/adil22jaleel/StableDiffusion_Space)
 
 
-![alt text](http://url/to/img.png)
+![HF1](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s20_assignment/gradio_ui_colab1.png)
 
-![alt text](http://url/to/img.png)
+![HF2](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s20_assignment/gradio_ui_colab2.png)
 
-![alt text](http://url/to/img.png)
+![HF3](https://github.com/adil22jaleel/era-v1-assignments/blob/main/s20_assignment/gradio_ui_colab3.png)
 
 
 
