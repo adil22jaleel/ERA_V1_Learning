@@ -41,6 +41,14 @@ def contrast_loss(images):
 
 ```
 
+## Styles Used
+
+-- BIRB STYLE
+-- CUTE GAME STYLE
+-- MANGA STYLE
+-- MIDJOURNEY STYLE
+-- SPACE STYLE
+
 ## Code Walkthrough
 
 ### Load the Autoencoder (vae):
